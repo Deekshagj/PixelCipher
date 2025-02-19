@@ -1,0 +1,80 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #00ffcc;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    background: #008080;
+    color: white;
+}
+
+.tab-content {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    background: #333;
+    color: white;
+}
+
+button {
+    background: #00ffcc;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008080;
+}
+
+#encrypted-result, #decrypted-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ffcc;
+}

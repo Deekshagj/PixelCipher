@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔒 Image Encryption & Decryption</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('encrypt')">Encrypt</button>
+            <button class="tab-btn" onclick="showTab('decrypt')">Decrypt</button>
+        </div>
+
+        <div id="encrypt" class="tab-content">
+            <h2>Encrypt an Image</h2>
+            <input type="file" id="encrypt-image" accept="image/*">
+            <input type="text" id="encrypt-message" placeholder="Enter secret message">
+            <input type="password" id="encrypt-password" placeholder="Enter password">
+            <button onclick="encryptImage()">Encrypt</button>
+            <div id="encrypted-result"></div>
+        </div>
+
+        <div id="decrypt" class="tab-content" style="display: none;">
+            <h2>Decrypt an Image</h2>
+            <input type="file" id="decrypt-image" accept="image/*">
+            <input type="password" id="decrypt-password" placeholder="Enter password">
+            <button onclick="decryptImage()">Decrypt</button>
+            <div id="decrypted-message"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
